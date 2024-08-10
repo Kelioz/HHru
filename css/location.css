@@ -15,9 +15,10 @@
 
 .location__Container{
     display: flex;
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     gap: 30px;
+
 }
 .location_item_location{
     display: flex;

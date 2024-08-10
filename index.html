@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header >
+    <div class="header_Logo">
+        <img src="./image/logo/Logo.png" alt="logo">
+    </div>
+    <div class="header_Exit">
+        <img src="./image/icons/exit.png" alt="exit">
+    </div>
+</header>
+
+<main>
+    <div class="sideBar__Container">
+        <div class="sideBar__wrapper">
+            <div class="sideBar__Item">
+                <div class="sideBar_Img"><img src="./image/icons/property.png" alt=""></div>
+                <div class="sidebar_Text"><span>Имущество</span></div>
+            </div>
+            <div class="sideBar__Item">
+                <div class="sideBar_Img"><img src="./image/icons/invent.png" alt=""></div>
+                <div class="sidebar_Text"><span>Инвентаризация</span></div>
+            </div>
+            <div class="sideBar__Item">
+                <div class="sideBar_Img"><img src="./image/icons/employer.png" alt=""></div>
+                <div class="sidebar_Text"><span>Сотрудники</span></div>
+            </div>
+            <div class="sideBar__Item">
+                <div class="sideBar_Img"><img src="./image/icons/notifications.png" alt=""></div>
+                <div class="sidebar_Text"><span>Уведомления</span></div>
+            </div>
+            <div class="sideBar__Item" style="background-color: #172139; color: white">
+                <div class="sideBar_Img"><img src="./image/icons/location.png" alt=""></div>
+                <div class="sidebar_Text"><span>Локации</span></div>
+            </div>
+            <div class="sideBar__Item">
+                <div class="sideBar_Img"><img src="./image/icons/settings.png" alt=""></div>
+                <div class="sidebar_Text"><span>Настройки</span></div>
+            </div>
+
+
+        </div>
+        <div class="sideBar_hide">
+            <span>< Скрыть меню</span>
+        </div>
+    </div>
+
+    <div class="location__Container">
+        <div class="location__header">
+            <h1>Локации / Все локации</h1>
+        </div>
+        <div class="location_buttons_wrapper">
+            <div class="nav_location_buttons">
+                <button style="background-color: #172139; color: white">Все локации</button>
+                <button>Импорт/Экспорт</button>
+                <button>Настройки</button>
+            </div>
+            <div class="location_create_button">
+                <button><i class="fa fa-refresh" ></i> Синхронизация (17.05.2024 15:23:21)</button>
+
+            </div>
+        </div>
+
+        <div class="location_create_button">
+            <button onclick="openModalCreate()">+ Создать локацию</button>
+            <div class="location_search__container">
+                <label>
+                    <input type="checkbox">
+                </label>
+                <span>Поиск по точному вхождению</span>
+                <label>
+                    <input type="search" placeholder="search">
+                </label>
+            </div>
+
+        </div>
+
+        <div class="location_items_wrapper">
+            <div class="location_item_location">
+                <img src="./image/icons/minus.png" alt="minus" class="plus_minus">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span class="location_title">Локация 1</span>
+                <span class="location_number">512</span>
+                <div class="location_edit" onclick="openModal()">
+                    <img src="./image/icons/pen.png" alt="pen">
+                    <span>Редактировать</span>
+                </div>
+                <div class="location_delete">
+                    <img src="./image/icons/cross.png" alt="pen">
+                    <span>Удалить</span>
+                </div>
+            </div>
+            <div class="location_item_location" style="padding-left: 40px">
+                <img src="./image/icons/plus.png" alt="minus" class="plus_minus">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span>Подотдел 1</span>
+                <span class="location_number">10</span>
+                <span>Для утерь</span>
+            </div>
+            <div class="location_item_location" style="padding-left: 40px">
+                <img src="./image/icons/minus.png" alt="minus" class="plus_minus">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span>Подотдел 2</span>
+                <span class="location_number">100</span>
+
+            </div>
+            <div class="location_item_location" style="padding-left: 120px">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span>Подподотдел 1</span>
+                <span class="location_number">2</span>
+                <span>Виртуальная</span>
+                <span><b>Без штрихкода</b></span>
+            </div>
+            <div class="location_item_location" style="padding-left: 40px">
+                <img src="./image/icons/plus.png" alt="minus" class="plus_minus">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span >Подотдел 2</span>
+                <span class="location_number">400</span>
+
+            </div>
+
+            <div class="location_item_location">
+                <img src="./image/icons/minus.png" alt="minus" class="plus_minus">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span class="location_title">Локация 2</span>
+                <span class="location_number">100</span>
+
+            </div>
+            <div class="location_item_location">
+                <img src="./image/icons/minus.png" alt="minus" class="plus_minus">
+                <img src="./image/icons/menuDot.png" alt="menudot">
+                <span class="location_title">Локация 3</span>
+                <span class="location_number">100</span>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</main>
+
+<div id="modal__Container_create">
+    <div class="modal__wrapper">
+    <div ><h2>Создать локацию</h2></div>
+    <form action="">
+        <label >
+            <input type="text" placeholder="Название">
+            <input type="text" placeholder="Штрихкод">
+            <input type="text" placeholder="RFID">
+            <select  placeholder="Вложенность">
+                <option>Локация 1</option>
+                <option>Локация 2</option>
+                <option>Локация 3</option>
+            </select>
+        </label>
+        <div class="modal_check">
+            <span>Виртуальная локация</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="modal_check">
+            <span>Локация для утерь</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="modal_Button">
+            <button style="background-color: #172139; color: white; width: 200px"><img src="./image/icons/save.png" alt="asd"> Создать</button>
+            <button onclick="closeCreateModal()">Отменить</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+
+<div id="modal__Container">
+    <div class="modal__wrapper">
+        <div ><h2>Создать локацию</h2></div>
+        <form action="">
+            <label >
+                <input type="text" placeholder="Название">
+                <input type="text" placeholder="Штрихкод">
+                <input type="text" placeholder="RFID">
+                <select  placeholder="Вложенность">
+                    <option>Локация 1</option>
+                    <option>Локация 2</option>
+                    <option>Локация 3</option>
+                </select>
+            </label>
+            <div class="modal_check">
+                <span>Виртуальная локация</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="modal_check">
+                <span>Локация для утерь</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="modal_Button">
+                <button style="width: 200px"><img src="./image/icons/cross.png" alt="asd"> Удалить</button>
+                <button onclick="closeModal()">Отменить</button>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: center; align-items: center">
+                <button style="background-color: #172139; color: white; width: 350px; height: 50px">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<footer style="position: absolute">
+    <div class="footer_text">
+        <span>Последний приём 20.09.2021 18:36:21</span>
+        <span>Последняя передача  20.09.2021 18:38:21</span>
+    </div>
+    <div class="footer_documentation">
+        <img src="./image/icons/documentation.png" alt="doc">
+        <a href="/">Документация</a>
+    </div>
+
+</footer>
+<script src="script/modal.js"></script>
+
+</body>
+</html>
